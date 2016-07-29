@@ -132,13 +132,13 @@
   <script type="text/javascript">
     var myLatlng = new google.maps.LatLng(48.852937,2.364178);
 
-    // var myOptions = {
-    //   zoom: 16,
-    //   center: myLatlng,
-    //   scrollwheel: false,
-    //   mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //   styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]// TODO: replace [] by array from https://snazzymaps.com/
-    // };
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP//,
+      // styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]// TODO: replace [] by array from https://snazzymaps.com/
+    };
 
     var map = new google.maps.Map(document.getElementById('map'), myOptions);
     var marker = new google.maps.Marker({
